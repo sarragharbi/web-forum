@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoVoyage - Gérer les Époques</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        /* Style général pour le body */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f0fa;
+        }
+
+        /* Style pour la sidebar (barre de navigation à gauche) */
+        .sidebar {
+            width: 280px;
+            background-color: #7a42f4;
+            color: #fff;
+            height: 100vh;
+            position: fixed;
+            padding: 20px 0;
+        }
+
+        .sidebar .logo {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 1 em;
+            font-weight: bold;
+        }
+
+        .sidebar .menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar .menu li {
+            padding: 15px 20px;
+        }
+
+        .sidebar .menu li a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar .menu li a i {
+            margin-right: 10px;
+        }
+
+        .sidebar .menu li.active {
+            background-color: #5c2bbd;
+            border-radius: 5px;
+        }
+
+        .main--content {
+            margin-left: 280px;
+            padding: 40px;
+        }
+
+        .header--wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .header--title {
+            color: #5c2bbd;
+        }
+
+        /* Table styling */
+        .table th, .table td {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h1>ChronoVoyage</h1>
+        </div>
+        <ul class="menu">
+            <li class="active">
+                <a href="dashboard.php">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <!-- Lien vers forum.php pour "Gérer les Époques" -->
+                <a href="forum.php"> 
+                    <i class="fas fa-history"></i>
+                    <span>Gérer les Époques</span>
+                </a>
+            </li>
+            <li>
+                <!-- Lien vers forum2.php pour "Gérer les Géos" -->
+                <a href="forum2.php">
+                    <i class="fas fa-globe"></i>
+                    <span>Gérer les Géos</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Déconnexion</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main--content">
+        <!-- Header -->
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Bienvenue, Administrateur</span>
+                <h2>ChronoVoyage</h2>
+            </div>
+        </div>
+
+        <!-- Liste des Époques -->
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Liste des Époques</h1>
+            <!-- Bouton pour ajouter une époque -->
+            <a href="forum.php" class="btn btn-success mb-3">Ajouter une Époque</a>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nom de l'Époque</th>
+                        <th>Période</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Exemple d'époques -->
+                    <tr>
+                        <td>1</td>
+                        <td>Époque de l'Antiquité</td>
+                        <td>3000 av. J.-C. - 500 ap. J.-C.</td>
+                        <td>
+                            <a href="#" class="btn btn-primary">Modifier</a>
+                            <a href="#" class="btn btn-danger">Supprimer</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Époque du Moyen Âge</td>
+                        <td>500 ap. J.-C. - 1500 ap. J.-C.</td>
+                        <td>
+                            <a href="#" class="btn btn-primary">Modifier</a>
+                            <a href="#" class="btn btn-danger">Supprimer</a>
+                        </td>
+                    </tr>
+                    <!-- Ajoutez plus d'époques ici -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

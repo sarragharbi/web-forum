@@ -1,0 +1,228 @@
+<!-- Section contenant la liste des célébrités -->
+<section class="celeb-section">
+    <!-- Titre de la section des célébrités tendances -->
+    <h2 class="line-title">exploration par epoque</h2>
+    <!-- Carrousel personnalisé d'éléments avec la bibliothèque OwlCarousel -->
+    <div class="owl-carousel custom-carousel owl-theme">
+        <!-- Premier élément du carrousel avec une image de fond -->
+        <div class="item active" style="background-image: url('images/6.jpg');">
+            <div class="item-desc">
+                <!-- Nom et description de la célébrité -->
+                <h3>L'Antiquité/Carthage </h3>
+                <p>Carthage, fondée par les Phéniciens au 9ᵉ siècle av. J.-C., était une puissante cité maritime située en Tunisie, célèbre pour son commerce et son redoutable général, Hannibal. Après des siècles de rivalité avec Rome, elle fut détruite en 146 av. J.-C. durant la troisième guerre punique. L'Empire romain prit alors le contrôle de la région, transformant Carthage en une province prospère. Des villes comme Dougga et El Jem connurent un essor grâce à des infrastructures impressionnantes. Ce mélange d'héritages phénicien et romain continue de marquer la Tunisie à travers ses sites archéologiques."</p>
+                <button class="video-btn" onclick="playVideo('images\vid1.mp4')">vidéo</button>
+            </div>
+        </div>
+        <!-- Autres éléments similaires pour d'autres célébrités -->
+        <div class="item" style="background-image: url('images/2.jpg');">
+            <div class="item-desc">
+                <h3>L'ère islamique</h3>
+                <p>La conquête islamique de la Tunisie débute en 647, avec l'arrivée des armées arabes sous le commandement d’Oqba Ibn Nafi. La région, anciennement sous domination byzantine, intègre progressivement le monde islamique, adoptant l'arabe comme langue et l'islam comme religion. Cette période voit l'essor de plusieurs dynasties locales, telles que les Aghlabides (800-909), qui fondent Kairouan et développent l’agriculture, les arts et la science. Par la suite, les Fatimides (909-1171), d’origine chiite, prennent le pouvoir avant de déplacer leur capitale au Caire, et les Hafsides (1228-1574) instaurent un long règne qui transforme Tunis en un centre culturel et commercial majeur du bassin méditerranéen. Ces dynasties ont façonné l'identité arabo-musulmane du pays, tout en influençant son architecture, ses traditions, et son héritage culturel.</p>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('images/3.jpg');">
+            <div class="item-desc">
+                <h3>L'Empire ottoman</h3>
+                <p>La Tunisie tombe sous le contrôle de l'Empire ottoman en 1574, après la défaite des Espagnols qui tentaient de la conquérir. Bien que rattachée à l'Empire, la Tunisie jouit d'une certaine autonomie, dirigée par des Beys (gouverneurs) locaux, notamment la dynastie des Husaynides qui commence en 1705. Cette période est marquée par une stabilité relative, mais aussi par des réformes militaires et administratives pour contrer les crises économiques et les menaces européennes. Toutefois, à la fin du 19e siècle, la faiblesse de l’Empire ottoman et l'endettement croissant du pays ouvrent la voie à l’ingérence européenne, préparant le terrain pour l’établissement du protectorat français.</p>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('images/4.jpg');">
+            <div class="item-desc">
+                <h3>Le protectorat français</h3>
+                <p>Sous prétexte de maintenir l'ordre, la France établit un protectorat en Tunisie en 1881, après avoir imposé le Traité du Bardo. Bien que la monarchie beylicale soit maintenue, le pouvoir réel est exercé par un résident général français. Cette période est marquée par des réformes dans les infrastructures, l'agriculture, et l'éducation, mais aussi par une exploitation économique au profit de la France, souvent au détriment des Tunisiens. Les inégalités sociales et la répression des libertés politiques alimentent le ressentiment, donnant naissance à un mouvement nationaliste de plus en plus actif, mené par des figures comme Habib Bourguiba. Ce mouvement aboutit à des négociations avec la France, qui finissent par accorder l’indépendance à la Tunisie le 20 mars 1956.</p>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('images/5.jpg');">
+            <div class="item-desc">
+                <h3>L'indépendance et la république</h3>
+                <p>Après l'indépendance, Habib Bourguiba devient le premier président de la Tunisie et met en place des réformes radicales pour moderniser le pays, notamment dans les domaines de l'éducation, de la santé, et des droits des femmes (comme l'abolition de la polygamie). En 1987, Bourguiba est remplacé par Zine el-Abidine Ben Ali, qui dirige le pays avec autoritarisme jusqu'à sa chute en 2011, suite à la Révolution tunisienne. Cet événement déclenche le Printemps arabe, marquant un tournant majeur dans l'histoire de la Tunisie. Depuis, la Tunisie a adopté une nouvelle constitution en 2014, a organisé des élections libres, et s'efforce de consolider sa démocratie. Cependant, le pays continue de faire face à des défis économiques et sociaux, tout en préservant les acquis démocratiques obtenus après la révolution.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Style CSS pour personnaliser l'apparence de la section -->
+<style>
+    @charset "utf-8";
+    /* Importation des polices de caractères */
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+    /* Réinitialisation des marges et des espacements de tous les éléments */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* Définition de la police et de la taille de la police pour le corps du document */
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        background-color: rgb(226, 164, 210); /* Couleur de fond du corps */
+    }
+    /* Autres styles de réinitialisation */
+    .clear {
+        clear: both;
+    }
+    img {
+        max-width: 100%;
+        border: 0;
+    }
+    ul, ol {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+        transition: all 0.4s ease-in-out;
+    }
+    /* Effet au survol des liens */
+    a:hover {
+        color: #d063a875;
+    }
+    /* Style pour le titre de la section */
+    h2 {
+        margin-bottom: 48px;
+        padding-bottom: 16px;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+        position: relative;
+        text-transform: capitalize;
+    }
+    /* Style pour les titres des éléments de célébrité */
+    h3 {
+        margin: 0 0 10px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    /* Personnalisation de l'apparence du titre de la section */
+    .line-title {
+        position: relative;
+        width: 400px;
+        color: rgba(12, 12, 12, 0.958);
+    }
+    .line-title::before,
+    .line-title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        border-radius: 2px;
+    }
+    .line-title::before {
+        width: 100%;
+        background: #956f82;
+    }
+    .line-title::after {
+        width: 32px;
+        background: #a12078;
+    }
+
+    /* Styles pour la section des célébrités */
+    .celeb-section {
+        padding: 60px 50px;
+    }
+    .celeb-section .owl-stage {
+        margin: 15px 0;
+        display: flex;
+
+    }
+    /* Styles pour chaque élément du carrousel */
+    .celeb-section .item {
+        margin: 0 15px 60px;
+        width: 320px;
+        height: 450px;
+        display: flex;
+        align-items: flex-end;
+        background: #ac36a6 no-repeat center center / cover;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+    }
+    /* Style lorsque l'élément est actif */
+    .celeb-section .item.active {
+        width: 500px;
+        box-shadow: 12px 40px 40px rgba(179, 16, 16, 0.25);
+    }
+    /* Effet de superposition de fond sur les éléments */
+    .celeb-section .item:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-image: linear-gradient(rgba(214, 15, 15, 0), rgba(0, 0, 0, 1));
+    }
+    /* Description des éléments du carrousel */
+    .celeb-section .item-desc {
+        padding: 0 24px 12px;
+        color: #ffffff;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transform: translateY(calc(100% - 54px));
+        transition: all 0.4s ease-in-out;
+    }
+    /* Lorsque l'élément est actif, la description est visible */
+    .celeb-section .item.active .item-desc {
+        transform: none;
+    }
+    /* Effet sur la description au survol */
+    .celeb-section .item-desc p {
+        opacity: 0;
+        transform: translateY(32px);
+        transition: all 0.4s ease-in-out 0.2s;
+    }
+    .celeb-section .item.active .item-desc p {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .video-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #a12078;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.video-btn:hover {
+    background-color: #7f0d5b;
+}
+
+    /* Style des points de navigation du carrousel */
+    .celeb-section .owl-theme.custom-carousel .owl-dots {
+        margin-top: -20px;
+        position: relative;
+        z-index: 5;
+    }
+</style>
+
+<!-- Inclusion de la bibliothèque jQuery et OwlCarousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    /* Initialisation du carrousel avec des options personnalisées */
+    $(".custom-carousel").owlCarousel({
+        autoWidth: true, /* Ajustement automatique de la largeur */
+        loop: true /* Boucle infinie du carrousel */
+    });
+
+    /* Activation de l'effet d'agrandissement et de rétraction au clic sur un élément */
+    $(document).ready(function () {
+        $(".custom-carousel .item").click(function () {
+            $(".custom-carousel .item").not($(this)).removeClass("active"); /* Désactive les autres éléments */
+            $(this).toggleClass("active"); /* Active ou désactive l'élément cliqué */
+        });
+    });
+</script>

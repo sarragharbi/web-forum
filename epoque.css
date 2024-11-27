@@ -1,0 +1,19 @@
+/* Effet d'animation sur l'élément */
+.feature-thumb {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+}
+
+.feature-thumb:hover {
+    transform: scale(1.1); /* Zoom léger lorsque le curseur survole */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Ombre portée pour attirer l'attention */
+}
+
+/* Pour que l'icône ou le titre changent de couleur */
+.feature-thumb:hover h3 {
+    color: #ff6600; /* Changer la couleur du titre au survol */
+}
+
+.feature-thumb:hover .feature-icon img {
+    transform: scale(1.1); /* Agrandir l'image au survol */
+    transition: transform 0.3s ease;
+}
